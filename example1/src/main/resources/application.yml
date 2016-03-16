@@ -18,3 +18,8 @@ spring:
     password: qwerty
 
 ---
+spring:
+  profiles: wildfly-ds
+
+  datasource:
+    jndi-name: java:jboss/datasources/sbdemo
