@@ -1,5 +1,5 @@
 angular.module('myApp',  ['restangular'])
-.controller('CourseController', function($scope, Restangular) {
+.controller('PeopleController', function($scope, Restangular) {
   var peopleServices = Restangular.all('people');
   $scope.trainologic = "Trainologic";
   peopleServices.getList().then(function(data) {
