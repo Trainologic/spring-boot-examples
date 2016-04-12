@@ -18,6 +18,9 @@ public class PersonManagementService {
   public List<Person> get() {
     List<Person> ret = new ArrayList<>();
     personRepository.findAll().forEach(person -> ret.add(person));
+
+
+
     return ret;
   }
 
